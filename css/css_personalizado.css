@@ -1,35 +1,38 @@
-body{
+body {
     overflow-x: hidden;
 }
 
 /* NAV */
-@media (max-width: 992px){
-    .navbar-nav{
-	    background: rgba(0,0,0,0.8) !important;
+@media (max-width: 992px) {
+    .navbar-nav {
+        background: rgba(0, 0, 0, 0.8) !important;
     }
     .top-nav .navbar-nav li .nav-link {
         text-align: center;
+        padding: 10px 0; /* Ajuste conforme necessário */
     }
 }
+
 @media (max-width: 1245px) {
     .top-nav .navbar-nav li .nav-link {
         padding: 6px 22px !important; /* Reduz o espaço interno horizontal */
         margin: 5px 2px 0 !important; /* Reduz a margem horizontal entre os links */
     }
 }
+
 @media (max-width: 1135px) {
     .top-nav .navbar-nav li .nav-link {
         padding: 6px 15px !important; /* Reduz o espaço interno horizontal */
         margin: 6px 2px 0 !important; /* Reduz a margem horizontal entre os links */
     }
 }
+
 @media (max-width: 1023px) {
     .top-nav .navbar-nav li .nav-link {
         padding: 6px 12px !important; /* Reduz o espaço interno horizontal */
         margin: 6px 2px 0 !important; /* Reduz a margem horizontal entre os links */
     }
 }
-
 
 /* LOGO */
 .logo {
@@ -39,12 +42,14 @@ body{
     position: relative;
     top: 30px;
 }
+
 #sticky-logo {
     position: fixed;
     bottom: 10px; /* Ajuste conforme necessário */
     left: 10px; /* Ajuste conforme necessário */
     z-index: 1000; /* Certifique-se de que o logo fique acima de outros elementos */
 }
+
 #sticky-logo img {
     width: 200px; /* Ajuste conforme necessário */
     height: auto;
@@ -52,49 +57,96 @@ body{
 }
 
 @media (max-width: 992px) {
-    .intro h1{
+    .intro h1 {
         font-size: 3.5rem !important;
     }
 }
+
 @media (max-width: 768px) {
-    .intro h1{
+    .intro h1 {
         font-size: 3rem !important;
     }
 }
+
 @media (max-width: 576px) {
-    .intro h1{
+    .intro h1 {
         font-size: 2.6rem !important;
     }
 }
-@media (max-width: 365px){
-    .navbar-brand{
+
+@media (max-width: 365px) {
+    .navbar-brand {
         font-size: 18px !important;
     }
-    .intro h1{
+    .intro h1 {
         font-size: 2rem !important;
     }
 }
-@media (max-width: 315px){
-    .navbar-brand{
+
+@media (max-width: 315px) {
+    .navbar-brand {
         font-size: 14px !important;
     }
-    .intro h1{
-        font-size: 1.8 !important;
+    .intro h1 {
+        font-size: 1.8rem !important;
     }
 }
-@media (max-width: 268px){
-    .navbar-brand{
+
+@media (max-width: 268px) {
+    .navbar-brand {
         font-size: 12px !important;
     }
-    .intro h1{
+    .intro h1 {
         font-size: 1.5rem !important;
     }
 }
-@media (max-width: 245px){
-    .navbar-brand{
+
+@media (max-width: 245px) {
+    .navbar-brand {
         font-size: 10px !important;
     }
 }
+/* Estilos gerais */
+.video-bg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-bg {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem mantenha suas proporções */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade conforme necessário */
+    z-index: 1;
+}
+
+/* Media query para telas menores que 500px */
+@media (max-width: 500px) {
+    .video-bg {
+        display: none;
+    }
+    .image-bg {
+        display: block;
+    }
+}
+
+
+
+
 
 /* HEADER */
 .video-bg {

@@ -1,0 +1,316 @@
+/* NAV */
+@media (max-width: 992px){
+    .navbar-nav{
+	    background: rgba(0,0,0,0.8) !important;
+    }
+    .top-nav .navbar-nav li .nav-link {
+        text-align: center;
+    }
+}
+@media (max-width: 1245px) {
+    .top-nav .navbar-nav li .nav-link {
+        padding: 6px 22px !important; /* Reduz o espaço interno horizontal */
+        margin: 5px 2px 0 !important; /* Reduz a margem horizontal entre os links */
+    }
+}
+@media (max-width: 1135px) {
+    .top-nav .navbar-nav li .nav-link {
+        padding: 6px 15px !important; /* Reduz o espaço interno horizontal */
+        margin: 6px 2px 0 !important; /* Reduz a margem horizontal entre os links */
+    }
+}
+@media (max-width: 1023px) {
+    .top-nav .navbar-nav li .nav-link {
+        padding: 6px 12px !important; /* Reduz o espaço interno horizontal */
+        margin: 6px 2px 0 !important; /* Reduz a margem horizontal entre os links */
+    }
+}
+
+
+/* LOGO */
+.logo {
+    max-height: 200px; /* Limita a altura do logotipo */
+    width: auto; /* Ajusta a largura proporcionalmente */
+    display: inline-block; /* Garante que ele fique na linha */
+    position: relative;
+    top: 30px;
+}
+#sticky-logo {
+    position: fixed;
+    bottom: 10px; /* Ajuste conforme necessário */
+    left: 10px; /* Ajuste conforme necessário */
+    z-index: 1000; /* Certifique-se de que o logo fique acima de outros elementos */
+}
+#sticky-logo img {
+    width: 200px; /* Ajuste conforme necessário */
+    height: auto;
+    cursor: pointer;
+}
+
+
+/* HEADER */
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que o vídeo cobre todo o fundo */
+    z-index: -2; /* Coloca o vídeo como o elemento mais abaixo */
+}
+/* Overlay preto com transparência */
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Transparência preta (ajustável) */
+    z-index: -1; /* Coloca o overlay acima do vídeo */
+}
+/* Texto e conteúdo dentro da seção */
+.intro {
+    position: relative;
+    padding: 150px 0; /* Ajustar espaço interno */
+    text-align: left;
+}
+/* Garantir que o conteúdo esteja acima do vídeo e overlay */
+.intro-caption {
+    position: relative;
+    z-index: 1; /* Posiciona o texto acima do overlay */
+}
+
+
+/* SOBRE */
+.barber-section {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+}
+.section-title span {
+    display: block;
+    font-size: 16px;
+    color: #d8a75d; /* Dourado */
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.section-title h2 {
+    font-size: 28px;
+    color: #333;
+    font-weight: bold;
+}
+/* Barber Card Styling */
+.barber-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+.barber-card:hover {
+    transform: translateY(-10px);
+}
+.barber-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.barber-caption {
+    padding: 20px;
+    background: #000; /* Fundo preto */
+    color: #fff;
+}
+.barber-caption span {
+    display: block;
+    font-size: 14px;
+    color: #d8a75d; /* Dourado */
+    margin-bottom: 5px;
+}
+.barber-caption h3 {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/* Section Title */
+.section-tittle span {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #f8f9fa; /* Texto cinza claro */
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+}
+.section-tittle h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff; /* Texto branco */
+}
+.section-title {
+    margin-bottom: 50px;
+    color: #fff;
+}
+.section-title span {
+    font-size: 18px !important;
+    color: #fbb03b;
+    font-weight: bold;
+}
+.section-title h2 {
+    font-size: 32px !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10px;
+    color: #fff;
+}
+
+
+/* PORTFOLIO */
+#portfolio {
+    background-image: url('../img/portfolio_img.png'); /* Troque pela URL do seu background */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    padding: 50px 0;
+    color: #fff;
+}
+/* Overlay escuro para o background */
+#portfolio::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /*Ajuste a opacidade conforme necessário*/
+    z-index: 0;
+}
+/* PORTFOLIO */
+#portfolio.portfolio-area {
+    background-image: url('../img/portfolio_img.png'); /* Troque pela URL do seu background */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    padding: 50px 0;
+    color: #fff;
+}
+/* Overlay escuro para o background */
+#portfolio.portfolio-area::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /*Ajuste a opacidade conforme necessário*/
+    z-index: 0;
+}
+/* Estilo dos itens do portfólio */
+#portfolio .portfolio-item {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+#portfolio .portfolio-img {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+#portfolio .portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Sobreposição preta semi-transparente */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+#portfolio .portfolio-overlay h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#portfolio .portfolio-overlay p {
+    font-size: 16px;
+    font-weight: 300;
+}
+/* Hover Effect */
+#portfolio .portfolio-item:hover .portfolio-img {
+    transform: scale(1.1);
+}
+#portfolio .portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+
+/* HORARIO */
+#horario {
+    background-image: url('../img/horario_img.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0;
+    position: relative;
+    color: #fff;
+}
+
+/* Overlay escuro para contraste */
+#horario::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+/* Garante que o conteúdo fique acima do overlay */
+#horario .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Estilo para o Horário */
+#horario .info-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    color: #000;
+}
+
+/* Estilo para o Mapa */
+#horario .map-box {
+    border: 5px solid rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* iFrame no mapa */
+#horario .map-box iframe {
+    border-radius: 10px;
+    border: 0;
+}
+
+
+
+
